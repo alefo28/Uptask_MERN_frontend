@@ -6,16 +6,6 @@ import Alerta from "../components/Alerta";
 const Proyectos = () => {
   const { proyectos, obtenerProyectos, alerta } = useProyectos();
 
-  
-
-  proyectos.map(
-    (proyecto) =>
-      !proyecto._id &&
-      useEffect(() => {
-        obtenerProyectos();
-      }, [])
-  );
-
   const { msg } = alerta;
 
   return (

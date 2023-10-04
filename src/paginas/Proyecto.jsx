@@ -96,7 +96,9 @@ const Proyecto = () => {
           </div>
         )}
       </div>
-      <p className="mt-2 text-gray-500">Fecha para Entregar: {formatearFecha(fechaEntrega)}</p>
+      <p className="mt-2 text-gray-500">
+        Fecha para Entregar: {formatearFecha(fechaEntrega)}
+      </p>
 
       {admin && (
         <button
